@@ -9,25 +9,51 @@
   <title>Tailwind Practice</title>
 </head>
 
-<body class="flex flex-col min-h-[100dvh]">
-  <header class="bg-gradient-to-r from-black to-blue-500 text-white p-4 ">
+<body dir="rtl" class="flex flex-col min-h-[100dvh]">
+  <header class="bg-gray-800 text-white p-4 flex justify-between md:justify-center items-center md:gap-10 bg-gradient-to-r from-black to-blue-500">
 
-    <a href="#" class="hover:bg-gray-700 px-3 py-2 rounded flex items-center peer">
-      <span>خدمات</span> <span class="ms-2  rotate-180">△</span>
-    </a>
-    <!-- منوی دراپ‌داون -->
-    <ul
-      class="absolute z-10 transition-all duration-500 w-32 overflow-hidden h-0 peer-focus:h-42 bg-gray-700 text-white rounded-lg ">
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-600">طراحی وب</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-600">سئو</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-600">برندینگ</a>
-      </li>
-    </ul>
+    <!-- لوگو -->
+    <div class="logo">
+      <img src="/src/assets/images/logo-3.png" alt="لوگو وبسایت" class="h-12" />
+    </div>
+
+    <!-- منوی ناوبری -->
+    <nav class="navbar hidden md:inline-block">
+      <ul class="flex space-x-6 items-center">
+        <li>
+          <a href="#" class="hover:bg-gray-700 px-3 py-2 rounded">خانه</a>
+        </li>
+        <li>
+          <a href="#" class="hover:bg-gray-700 px-3 py-2 rounded">درباره ما</a>
+        </li>
+        <!-- منوی دراپ‌داون -->
+        <li tabindex="1" class="relative ">
+          <!-- منوی دراپ‌داون -->
+          <div tabindex="1" href="#"
+            class="hover:bg-gray-700 px-3 py-2 rounded relative flex items-center group cursor-pointer">
+            <span>خدمات</span> <span class="ms-2  rotate-180">△</span>
+            <ul
+              class="absolute top-10 left-0 z-10 transition-all duration-500 w-32 overflow-hidden h-0 group-focus:h-42 bg-gray-700 text-white rounded-lg ">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-600">طراحی وب</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-600">سئو</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-600">برندینگ</a>
+              </li>
+            </ul>
+          </div >
+
+        </li>
+        <li>
+          <a href="#" class="hover:bg-gray-700 px-3 py-2 rounded">تماس با ما</a>
+        </li>
+      </ul>
+    </nav>
+
+
 
   </header>
   <main class="bg-[url(/src/assets/images/03.jpeg)] bg-cover bg-center bg-white/60 bg-blend-overlay p-4 grow"></main>
