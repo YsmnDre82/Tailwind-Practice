@@ -10,7 +10,8 @@
 </head>
 
 <body dir="rtl" class="flex flex-col min-h-[100dvh]">
-  <header class="bg-gray-800 text-white p-4 flex justify-between md:justify-center items-center md:gap-10 bg-gradient-to-r from-black to-blue-500">
+  <header
+    class="bg-gray-800 text-white p-4 flex justify-between md:justify-center items-center md:gap-10 bg-gradient-to-r from-black to-blue-500">
 
     <!-- لوگو -->
     <div class="logo">
@@ -44,7 +45,7 @@
                 <a href="#" class="block px-4 py-2 hover:bg-gray-600">برندینگ</a>
               </li>
             </ul>
-          </div >
+          </div>
 
         </li>
         <li>
@@ -54,9 +55,155 @@
     </nav>
 
 
+    <!-- منوی ساید بار -->
+    <aside class="w-8 md:hidden">
+
+      <label for="checkbox">
+        <img tabindex="0" class="w-full" src="/src/assets/images/svg/menu-alt-svgrepo-com.svg" alt="" />
+      </label>
+      <input class="hidden peer" id="checkbox" type="checkbox">
+
+      <nav
+        class=" w-0 z-10 peer-checked:w-8/12 overflow-hidden transition-all duration-1000  fixed top-0 right-0 bg-gray-600/80  h-[100dvh] md:hidden">
+        <ul class="flex flex-col pt-6 w-72 h-full p-0 space-x-6 items-center">
+          <li class="w-full text-center !m-0">
+            <a href="#" class="transition-all duration-1000 hover:bg-gray-700 block px-3 w-full py-2 rounded">خانه</a>
+          </li>
+          <li class="w-full text-center !m-0">
+            <a href="#" class="transition-all duration-1000 hover:bg-gray-700 block px-3 w-full py-2 rounded">درباره
+              ما</a>
+          </li>
+          <!-- منوی دراپ‌داون -->
+          <li tabindex="1" class="relative group w-full text-center !m-0">
+            <a href="#"
+              class="transition-all duration-1000 hover:bg-gray-700 px-3 py-2 rounded flex justify-center items-center peer">
+              خدمات ▼
+            </a>
+            <!-- منوی دراپ‌داون -->
+            <ul
+              class="transition-all duration-1000 overflow-hidden h-0 bg-gray-700 text-white rounded-lg peer-focus:h-40">
+              <li>
+                <a href="#" class="block w-full px-4 py-2 transition-all duration-1000 hover:bg-gray-600">طراحی وب</a>
+              </li>
+              <li>
+                <a href="#" class="block w-full px-4 py-2 transition-all duration-1000 hover:bg-gray-600">سئو</a>
+              </li>
+              <li>
+                <a href="#" class="block w-full px-4 py-2 transition-all duration-1000 hover:bg-gray-600">برندینگ</a>
+              </li>
+            </ul>
+          </li>
+          <li class="w-full text-center !m-0">
+            <a href="#" class="transition-all duration-1000 hover:bg-gray-700 block px-3 w-full py-2 rounded">تماس با
+              ما</a>
+          </li>
+        </ul>
+      </nav>
+
+    </aside>
+
+
+
+
 
   </header>
-  <main class="bg-[url(/src/assets/images/03.jpeg)] bg-cover bg-center bg-white/60 bg-blend-overlay p-4 grow"></main>
+
+
+
+
+
+
+
+  <main class="bg-[url(/src/assets/images/03.jpeg)] bg-cover bg-center bg-white/60 bg-blend-overlay p-4 grow">
+
+    <h2 class="mx-auto text-center p-2 text-blue-700">گالری تصاویر</h2>
+
+
+    <section class="max-w-[90%] xl:max-w-11/12 mx-auto p-4 flex flex-col xl:flex-row flex-wrap justify-center gap-4">
+      <!-- تصویر 1 -->
+      <div class="relative shadow-lg overflow-hidden rounded-lg w-full xl:w-[30%] inline-block">
+        <a class="w-full h-full" href="#picBox">
+          <img src="/src/assets/images/03.jpeg" alt="تصویر ۳" class="w-full h-full object-cover rounded-2xl" />
+          <div
+            class="absolute group rounded-2xl w-full bg-black/50  hover:bg-black/10 transition duration-300  inset-0 ">
+            <p
+              class="text-white w-1/2 mx-auto bg-amber-400 outline-solid outline-4 outline-offset-1 outline-sky-700 p-3 shadow-2xl mb-5  shadow-black rounded-2xl text-center text-xl  mt-4 duration-300 opacity-0 group-hover:opacity-100 group-active:text-black">
+              کلیک کنید...
+            </p>
+          </div>
+        </a>
+      </div>
+      <!-- 2 -->
+      <div class="relative shadow-lg overflow-hidden rounded-lg w-full xl:w-[30%] inline-block">
+        <a class="w-full h-full" href="#picBox">
+          <img src="/src/assets/images/03.jpeg" alt="تصویر ۳" class="w-full h-full object-cover rounded-2xl" />
+          <div
+            class="absolute group rounded-2xl w-full bg-black/50  hover:bg-black/10 transition duration-300  inset-0 ">
+            <p
+              class="text-white w-1/2 mx-auto bg-amber-400 outline-solid outline-4 outline-offset-1 outline-sky-700 p-3 shadow-2xl mb-5  shadow-black rounded-2xl text-center text-xl  mt-4 duration-300 opacity-0 group-hover:opacity-100 group-active:text-black">
+              کلیک کنید...
+            </p>
+          </div>
+        </a>
+      </div>
+      <!-- تصویر 3 -->
+      <div class="relative shadow-lg overflow-hidden rounded-lg w-full xl:w-[30%] inline-block">
+        <a class="w-full h-full" href="#picBox">
+          <img src="/src/assets/images/03.jpeg" alt="تصویر ۳" class="w-full h-full object-cover rounded-2xl" />
+          <div
+            class="absolute group rounded-2xl w-full bg-black/50  hover:bg-black/10 transition duration-300  inset-0 ">
+            <p
+              class="text-white w-1/2 mx-auto bg-amber-400 outline-solid outline-4 outline-offset-1 outline-sky-700 p-3 shadow-2xl mb-5  shadow-black rounded-2xl text-center text-xl  mt-4 duration-300 opacity-0 group-hover:opacity-100 group-active:text-black">
+              کلیک کنید...
+            </p>
+          </div>
+        </a>
+      </div>
+      <!-- 4 -->
+      <div class="relative shadow-lg overflow-hidden rounded-lg w-full xl:w-[30%] inline-block">
+        <a class="w-full h-full" href="#picBox">
+          <img src="/src/assets/images/03.jpeg" alt="تصویر ۳" class="w-full h-full object-cover rounded-2xl" />
+          <div
+            class="absolute group rounded-2xl w-full bg-black/50  hover:bg-black/10 transition duration-300  inset-0 ">
+            <p
+              class="text-white w-1/2 mx-auto bg-amber-400 outline-solid outline-4 outline-offset-1 outline-sky-700 p-3 shadow-2xl mb-5  shadow-black rounded-2xl text-center text-xl  mt-4 duration-300 opacity-0 group-hover:opacity-100 group-active:text-black">
+              کلیک کنید...
+            </p>
+          </div>
+        </a>
+      </div>
+      <!-- تصویر 4 -->
+      <div class="relative shadow-lg overflow-hidden rounded-lg w-full xl:w-[30%] inline-block">
+        <a class="w-full h-full" href="#picBox">
+          <img src="/src/assets/images/03.jpeg" alt="تصویر ۳" class="w-full h-full object-cover rounded-2xl" />
+          <div
+            class="absolute group rounded-2xl w-full bg-black/50  hover:bg-black/10 transition duration-300  inset-0 ">
+            <p
+              class="text-white w-1/2 mx-auto bg-amber-400 outline-solid outline-4 outline-offset-1 outline-sky-700 p-3 shadow-2xl mb-5  shadow-black rounded-2xl text-center text-xl  mt-4 duration-300 opacity-0 group-hover:opacity-100 group-active:text-black">
+              کلیک کنید...
+            </p>
+          </div>
+        </a>
+      </div>
+
+    </section>
+
+    <!-- باکس تارگت -->
+    <div id="picBox"
+      class="absolute top-0 transition-all duration-700  flex  flex-col justify-center items-center w-full xl:w-[50%] py-24 bg-gray-600/80 bottom-0 left-0 right-0 m-auto rounded-2xl opacity-0 invisible target:opacity-100 target:visible">
+      <img class="w-10/12" src="/src/assets/images/03.jpeg" alt="" />
+
+      <a href="#" class="bg-black rounded-full mt-2 p-3 text-2xl border-red-800 border-4">❌</a>
+    </div>
+
+
+
+  </main>
+
+
+
+
+
   <footer class="bg-gray-800 p-4"></footer>
 </body>
 
