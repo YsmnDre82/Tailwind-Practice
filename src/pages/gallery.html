@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/output.css">
+  <link rel="stylesheet" href="/src/input.css">
+  <title>Document</title>
+</head>
+
+<body dir="rtl" class="flex flex-col min-h-[100vh] p-0">
+
+  <body>
+    <!-- هدر -->
+    <header
+      class="bg-gray-800 text-white p-4 flex justify-between md:justify-center items-center md:gap-10 bg-gradient-to-r from-black to-blue-500">
+      <!-- لوگو -->
+      <div class="logo">
+        <img src="/src/assets/images/logo-3.png" alt="لوگو وبسایت" class="h-12" />
+      </div>
+
+      <!-- منوی ناوبری -->
+      <nav class="navbar hidden md:inline-block">
+        <ul class="flex space-x-6 items-center">
+          <li>
+            <a href="#" class="hover:bg-gray-700 px-3 py-2 rounded">خانه</a>
+          </li>
+          <li>
+            <a href="#" class="hover:bg-gray-700 px-3 py-2 rounded">درباره ما</a>
+          </li>
+          <!-- منوی دراپ‌داون -->
+          <li tabindex="1" class="relative ">
+            <a href="#" class="hover:bg-gray-700 px-3 py-2 rounded flex items-center peer">
+              <span>خدمات</span> <span class="ms-2  rotate-180">△</span>
+            </a>
+            <!-- منوی دراپ‌داون -->
+            <ul
+              class="absolute z-10 transition-all duration-1000 w-32 overflow-hidden h-0 bg-gray-700 text-white rounded-lg peer-focus:h-40">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-600">طراحی وب</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-600">سئو</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-600">برندینگ</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="hover:bg-gray-700 px-3 py-2 rounded">تماس با ما</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- منوی ساید بار -->
+      <aside class="w-8 md:hidden">
+        <input id="checkbox" class="peer hidden" type="checkbox" />
+        <label for="checkbox">
+          <img tabindex="0" class="w-full" src="/src/assets/images/svg/menu-alt-svgrepo-com.svg" alt="" />
+        </label>
+
+        <nav
+          class="w-0 z-10 overflow-hidden transition-all duration-1000 peer-checked:w-9/12 fixed top-0 right-0 bg-gray-600 bg-opacity-[0.85] h-[100vh] md:hidden">
+          <ul class="flex flex-col pt-6 w-72 h-full p-0 space-x-6 items-center">
+            <li class="w-full text-center !m-0">
+              <a href="#" class="transition-all duration-1000 hover:bg-gray-700 block px-3 w-full py-2 rounded">خانه</a>
+            </li>
+            <li class="w-full text-center !m-0">
+              <a href="#" class="transition-all duration-1000 hover:bg-gray-700 block px-3 w-full py-2 rounded">درباره
+                ما</a>
+            </li>
+            <!-- منوی دراپ‌داون -->
+            <li tabindex="1" class="relative group w-full text-center !m-0">
+              <a href="#"
+                class="transition-all duration-1000 hover:bg-gray-700 px-3 py-2 rounded flex justify-center items-center peer">
+                خدمات ▼
+              </a>
+              <!-- منوی دراپ‌داون -->
+              <ul
+                class="transition-all duration-1000 overflow-hidden h-0 bg-gray-700 text-white rounded-lg peer-focus:h-40">
+                <li>
+                  <a href="#" class="block w-full px-4 py-2 transition-all duration-1000 hover:bg-gray-600">طراحی وب</a>
+                </li>
+                <li>
+                  <a href="#" class="block w-full px-4 py-2 transition-all duration-1000 hover:bg-gray-600">سئو</a>
+                </li>
+                <li>
+                  <a href="#" class="block w-full px-4 py-2 transition-all duration-1000 hover:bg-gray-600">برندینگ</a>
+                </li>
+              </ul>
+            </li>
+            <li class="w-full text-center !m-0">
+              <a href="#" class="transition-all duration-1000 hover:bg-gray-700 block px-3 w-full py-2 rounded">تماس با
+                ما</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </header>
+
+    <main
+      class="grow pt-3 flex flex-col gap-y-3 bg-[url(/src/assets/images/03.jpeg)] bg-blend-overlay bg-center bg-cover bg-white/60 ">
+      <h2 class="mx-auto text-blue-700">گالری تصاویر</h2>
+      <div class="max-w-[90%] xl:max-w-11/12  mx-auto flex gap-4 flex-col xl:flex-row flex-wrap justify-center">
+        <!-- تصویر 1 -->
+        <a id="pigGallery" href="#picBox"
+          class="relative shadow-lg overflow-hidden rounded-lg w-full xl:w-[30%] inline-block">
+          <img src="/src/assets/images/03.jpeg" alt="تصویر ۳" class="w-full h-full object-cover rounded-2xl" />
+          <div
+            class="absolute rounded-2xl w-full group bg-black/50  hover:bg-black/10 transition duration-300  top-0 inset-0 start-0 right-0 left-0">
+            <p
+              class="text-white w-1/2 mx-auto bg-amber-400 outline-solid outline-4 outline-offset-1 outline-sky-700 p-3 shadow-2xl mb-5  shadow-black rounded-2xl text-center text-xl opacity-0 group-hover:opacity-100 group-hover:text-black mt-4 duration-300">
+              کلیک کنید...
+            </p>
+          </div>
+        </a>
+        <!-- تصویر 2 -->
+        <a id="pigGallery" href="#picBox"
+          class="relative shadow-lg overflow-hidden rounded-lg w-full xl:w-[30%] inline-block">
+          <img src="/src/assets/images/03.jpeg" alt="تصویر ۳" class="w-full h-full object-cover rounded-2xl" />
+          <div
+            class="absolute rounded-2xl w-full group bg-black/50  hover:bg-black/10 transition duration-300  top-0 inset-0 start-0 right-0 left-0">
+            <p
+              class="text-white w-1/2 mx-auto bg-amber-400 outline-solid outline-4 outline-offset-1 outline-sky-700 p-3 shadow-2xl mb-5  shadow-black rounded-2xl text-center text-xl opacity-0 group-hover:opacity-100 group-hover:text-black mt-4 duration-300">
+              کلیک کنید...
+            </p>
+          </div>
+        </a>
+        <!-- تصویر 3 -->
+        <a id="pigGallery" href="#picBox"
+          class="relative shadow-lg overflow-hidden rounded-lg w-full xl:w-[30%] inline-block">
+          <img src="/src/assets/images/03.jpeg" alt="تصویر ۳" class="w-full h-full object-cover rounded-2xl" />
+          <div
+            class="absolute rounded-2xl w-full group bg-black/50  hover:bg-black/10 transition duration-300  top-0 inset-0 start-0 right-0 left-0">
+            <p
+              class="text-white w-1/2 mx-auto bg-amber-400 outline-solid outline-4 outline-offset-1 outline-sky-700 p-3 shadow-2xl mb-5  shadow-black rounded-2xl text-center text-xl opacity-0 group-hover:opacity-100 group-hover:text-black mt-4 duration-300">
+              کلیک کنید...
+            </p>
+          </div>
+        </a>
+        <!-- تصویر 2 -->
+        <a id="pigGallery" href="#picBox"
+          class="relative shadow-lg overflow-hidden rounded-lg w-full xl:w-[30%] inline-block">
+          <img src="/src/assets/images/03.jpeg" alt="تصویر ۳" class="w-full h-full object-cover rounded-2xl" />
+          <div
+            class="absolute rounded-2xl w-full group bg-black/50  hover:bg-black/10 transition duration-300  top-0 inset-0 start-0 right-0 left-0">
+            <p
+              class="text-white w-1/2 mx-auto bg-amber-400 outline-solid outline-4 outline-offset-1 outline-sky-700 p-3 shadow-2xl mb-5  shadow-black rounded-2xl text-center text-xl opacity-0 group-hover:opacity-100 group-hover:text-black mt-4 duration-300">
+              کلیک کنید...
+            </p>
+          </div>
+        </a>
+        <!-- تصویر 3 -->
+        <a id="pigGallery" href="#picBox"
+          class="relative shadow-lg overflow-hidden rounded-lg w-full xl:w-[30%] inline-block">
+          <img src="/src/assets/images/03.jpeg" alt="تصویر ۳" class="w-full h-full object-cover rounded-2xl" />
+          <div
+            class="absolute rounded-2xl w-full group bg-black/50  hover:bg-black/10 transition duration-300  top-0 inset-0 start-0 right-0 left-0">
+            <p
+              class="text-white w-1/2 mx-auto bg-amber-400 outline-solid outline-4 outline-offset-1 outline-sky-700 p-3 shadow-2xl mb-5  shadow-black rounded-2xl text-center text-xl opacity-0 group-hover:opacity-100 group-hover:text-black mt-4 duration-300">
+              کلیک کنید...
+            </p>
+          </div>
+        </a>
+
+
+      </div>
+      <!-- باکس تارگت -->
+      <div id="picBox"
+        class="absolute top-0 transition-all duration-700 bg-opacity-50 opacity-0 invisible target:visible flex target:opacity-100 flex-col justify-center items-center w-full md:w-[50%] py-24 bg-gray-600 bottom-0 left-0 right-0 m-auto rounded-2xl">
+        <img class="w-10/12" src="/src/assets/images/03.jpeg" alt="" />
+
+        <a href="#pigGallery" class="bg-black rounded-full mt-2 p-3 text-2xl border-red-800 border-4">❌</a>
+      </div>
+    </main>
+
+
+    <footer class="p-10 flex justify-center items-center bg-blue-900">
+      footer content
+    </footer>
+
+
+
+
+  </body>
+
+</html>
