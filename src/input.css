@@ -1,1 +1,88 @@
 @import "tailwindcss";
+
+
+@layer utilities {
+  .animate-fade-in {
+    @apply opacity-0 animate-[fadein_1s_ease-in-out_forwards];
+  }
+
+  .animate-button {
+    @apply transition-all duration-300 ease-in-out cursor-pointer;
+  }
+
+  .animate-color {
+    @apply transition-all animate-[changeColor_1s_linear_infinite_alternate]
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    /* background: linear-gradient(45deg, red, black); */
+    background-position: 0% 50%
+  }
+
+  100% {
+    /* background: linear-gradient(45deg, black, red); */
+    background-position: 100% 50%;
+
+  }
+}
+
+
+
+
+
+@font-face {
+  font-family: yekan;
+  src: url("/src/assets/font/yekan-font/yekan-regular.woff");
+  src: url("/src/assets/font/yekan-font/yekan-regular.ttf");
+}
+
+* {
+  font-family: yekan;
+  /* padding: 0;
+  margin: 0; */
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* :root {
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+  --color-primary: #0077ff;
+  --color-secondary: #f5f5f5;
+  --radius-base: 12px;
+} */
